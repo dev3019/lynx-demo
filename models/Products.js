@@ -47,7 +47,7 @@ const Product = sequelize.define(
   },
   {
     tableName: 'product',  // Explicitly set the table name to 'product'
-    timestamps: true,      // Set to true if you want Sequelize to manage createdAt and updatedAt fields automatically
+    timestamps: true,
     createdAt: 'createdDate',
     updatedAt: 'updatedDate'
   }
