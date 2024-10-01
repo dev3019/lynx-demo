@@ -12,20 +12,20 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://0.0.0.0:3000/api/v1/validators/current",
-					"protocol": "http",
+					"raw": "localhost:3000/products/5?to=CAD",
 					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
+						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"api",
-						"v1",
-						"validators",
-						"current"
+						"products",
+						"5"
+					],
+					"query": [
+						{
+							"key": "to",
+							"value": "CAD"
+						}
 					]
 				}
 			},
@@ -33,9 +33,42 @@
 		},
 		{
 			"name": "getMostViewed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"dave\",\n    \"lastName\":\"tang\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products/most-viewed?limit=8&to=gbp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"most-viewed"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "8"
+						},
+						{
+							"key": "to",
+							"value": "gbp"
+						}
+					]
+				}
 			},
 			"response": []
 		}
