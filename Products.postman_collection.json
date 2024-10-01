@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "ab865710-4902-4aed-ad0e-98ed5d29bf55",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16071016"
+	},
+	"item": [
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/api/v1/validators/current",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"validators",
+						"current"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMostViewed",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
